@@ -23,6 +23,11 @@
     border-bottom: 1px solid #F3F3F3;
 }
 
+.nav-resources .items .item a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .nav-resources .items .item .arrow-right {
     display: none;
     float: right;
