@@ -26,6 +26,7 @@
 .nav-resources .items .item a {
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 
 .nav-resources .items .item .arrow-right {

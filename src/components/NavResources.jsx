@@ -14,11 +14,20 @@ class NavResources extends Component {
         <ul className="items">
           {this.props.resources.map(item => (
             <li className={`item ${item.active ? "active" : ""}`} key={item.id}>
-              <img className="active-sign" src={activeSign} alt="active-sign" />
+              <Link to={`/${item.id}`}>
+                <img
+                  className="active-sign"
+                  src={activeSign}
+                  alt="active-sign"
+                />
 
-              <Link to={`/${item.id}`}>{item.name}</Link>
-
-              <img className="arrow-right" src={arrowRight} alt="arrow-right" />
+                {item.name}
+                <img
+                  className="arrow-right"
+                  src={arrowRight}
+                  alt="arrow-right"
+                />
+              </Link>
             </li>
           ))}
         </ul>

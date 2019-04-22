@@ -34,11 +34,7 @@ class Resources extends Component {
       r.active = r.id === id;
     });
 
-    let active = resources.filter(r => r.id === id)[0];
-
-    if (!active) {
-      resources[0].active = true;
-    }
+    // let active = resources.filter(r => r.id === id)[0];
 
     this.setState({ resources });
   }
