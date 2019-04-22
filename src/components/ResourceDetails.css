@@ -11,6 +11,7 @@
     height: 50px;
     color: #fff;
     padding: 5px 10px;
+    font-size: 25px;
 }
 
 .resource-details .details {
@@ -20,7 +21,8 @@
 }
 
 .resource-details .details .section {
-    width: 50%;
+    width: 48%;
+    margin-right: 10px;
 }
 
 .resource-details .details .sub-title {
@@ -44,4 +46,15 @@
     background: #F5F5F5;
     color: #9587A3;
     padding-left: 15px;
+}
+
+.resource-details .details .actions {
+    margin-top: 60px;
+}
+
+.resource-details .details .actions .action {
+    background: #F5F5F5;
+    color: #B8BAC9;
+    padding: 5px;
+    margin: 5px 0;
 }

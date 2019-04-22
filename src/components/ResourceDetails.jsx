@@ -6,7 +6,7 @@ class ResourceDetails extends Component {
   state = {};
 
   render() {
-    const { resource } = this.props;
+    const { resource, actions } = this.props;
 
     let content = <div>Please select an item</div>;
 
@@ -39,6 +39,13 @@ class ResourceDetails extends Component {
               <div className="sub-title">
                 PERMITED ACTIONS
                 <img src={help} alt="help" />
+              </div>
+              <div className="actions">
+                {actions.map(action => (
+                  <div className="action" key={action.id}>
+                    {action.name}
+                  </div>
+                ))}
               </div>
             </div>
           </div>

@@ -39,13 +39,20 @@ class Resources extends Component {
   }
 
   render() {
-    const resources = this.state.resources;
-    const activeResources = resources.filter(r => r.active)[0];
+    const { resources, actions } = this.state;
+    const activeResource = resources.filter(r => r.active)[0];
+    let resourceActions = [];
+
+    if (activeResource) {
+      resourceActions = activeResource.actionIds
+        .map(id => actions[id])
+        .filter(a => a);
+    }
 
     return (
       <React.Fragment>
         <NavResources resources={resources} />
-        <ResourceDetails resource={activeResources} />
+        <ResourceDetails resource={activeResource} actions={resourceActions} />
       </React.Fragment>
     );
   }
