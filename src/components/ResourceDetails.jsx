@@ -19,7 +19,7 @@ class ResourceDetails extends Component {
             <div className="section">
               <div className="sub-title">
                 GENERAL DETAILS
-                <img src={help} alt="help" />
+                <img src={help} alt="help" title="GENERAL DETAILS" />
               </div>
 
               <label className="label">NAME</label>
@@ -38,7 +38,11 @@ class ResourceDetails extends Component {
             <div className="section">
               <div className="sub-title">
                 PERMITED ACTIONS
-                <img src={help} alt="help" />
+                <img
+                  src={help}
+                  alt="PERMITED ACTIONS"
+                  title="PERMITED ACTIONS"
+                />
               </div>
               <div className="actions">
                 {actions.map(action => (
