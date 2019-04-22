@@ -44,9 +44,9 @@ class Resources extends Component {
     let resourceActions = [];
 
     if (activeResource) {
-      resourceActions = activeResource.actionIds
-        .map(id => actions[id])
-        .filter(a => a);
+      resourceActions = activeResource.actionIds.map(
+        id => actions.filter(a => a.id === id)[0]
+      );
     }
 
     return (
