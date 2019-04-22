@@ -1,6 +1,6 @@
 .resource-details {
     display: inline-block;
-    width: 60%;
+    width: 70%;
     margin-left: 5%;
     border: 1px solid #D3D3D3;
     vertical-align: middle;
@@ -10,7 +10,7 @@
     background: #00D1B2;
     height: 50px;
     color: #fff;
-    padding: 5px 10px;
+    padding: 10px 10px 20px 10px;
     font-size: 25px;
 }
 
