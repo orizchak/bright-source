@@ -1,8 +1,9 @@
 .resource-details {
     display: inline-block;
-    width: 50%;
+    width: 60%;
     margin-left: 5%;
-    border: 2px solid #D3D3D3;
+    border: 1px solid #D3D3D3;
+    vertical-align: middle;
 }
 
 .resource-details .title {
@@ -14,4 +15,33 @@
 
 .resource-details .details {
     background: #FAFBFF;
+    padding: 20px;
+    display: flex;
+}
+
+.resource-details .details .section {
+    width: 50%;
+}
+
+.resource-details .details .sub-title {
+    background: #FAFBFF;
+    color: #5390EA;
+    margin-bottom: 20px;
+}
+
+.resource-details .details .sub-title img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.resource-details .details label {
+    color: #DAC8C9;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.resource-details .details .value {
+    background: #F5F5F5;
+    color: #9587A3;
+    padding-left: 15px;
 }
