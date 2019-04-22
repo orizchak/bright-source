@@ -1,0 +1,17 @@
+.resource-details {
+    display: inline-block;
+    width: 50%;
+    margin-left: 5%;
+    border: 2px solid #D3D3D3;
+}
+
+.resource-details .title {
+    background: #00D1B2;
+    height: 50px;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.resource-details .details {
+    background: #FAFBFF;
+}

@@ -4,6 +4,7 @@
     height: calc(100% - 50px);
     color: #878787;
     font-size: 20px;
+    display: inline-block;
 }
 
 .nav-resources .title {

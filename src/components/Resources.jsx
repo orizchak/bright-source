@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavResources from "./NavResources";
+import ResourceDetails from "./ResourceDetails";
 
 class Resources extends Component {
   state = {
@@ -34,15 +35,19 @@ class Resources extends Component {
       r.active = r.id === id;
     });
 
-    // let active = resources.filter(r => r.id === id)[0];
-
     this.setState({ resources });
   }
 
   render() {
     const resources = this.state.resources;
+    const activeResources = resources.filter(r => r.active)[0];
 
-    return <NavResources resources={resources} />;
+    return (
+      <React.Fragment>
+        <NavResources resources={resources} />
+        <ResourceDetails resource={activeResources} />
+      </React.Fragment>
+    );
   }
 }
 
